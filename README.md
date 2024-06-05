@@ -2,7 +2,7 @@
 
 Initial requirements:
 - Validated on lisk testnet network before May 2024
-- At least 1000 testnet klayr in the validator's wallet
+- At least 1000 testnet KLY in the validator's wallet
 - [Testnet klayr node installed](https://github.com/puccca/install-testnet-klayr-core)
 
 ## 1. Change "allowedMethods": [] to "allowedMethods": ["*"] in config

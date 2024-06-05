@@ -92,3 +92,12 @@ klayr-core endpoint:invoke random_getHashOnionUsage '{"address":"<YOUR_TESTNET_K
 ```shell
 klayr-core generator:status --pretty
 ```
+
+*Restart the node & enable generator*
+```shell
+pm2 delete all
+pm2 start core-start.json
+pm2 logs
+klayr-core generator:status --pretty
+klayr-core generator:enable <YOUR_TESTNET_KLAYR_ADDRESS> --use-status-value
+```
